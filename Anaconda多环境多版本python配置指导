@@ -1,4 +1,5 @@
 Anaconda多环境多版本python配置指导 (https://www.jianshu.com/p/d2e15200ee9b)
+
 $ conda create -n py2 python=2 # 安装python2到环境py2中
 
 $ conda create -n py3 python=3 # 安装python3到环境py3中
