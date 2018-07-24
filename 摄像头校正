@@ -1,3 +1,8 @@
 https://blog.csdn.net/tjiyu/article/details/52516581
+https://www.cnblogs.com/star91/p/4764463.html
 
 矫正的原因是摄像头获取的图像失真了
+
+标定可包含矫正过程
+
+标定的额外目标是获取图像与真实物体坐标映射关系
