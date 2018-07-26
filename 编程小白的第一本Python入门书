@@ -10,7 +10,7 @@
 
 # 字符串基本用法
 1. 定义：字符串用' '引起来，含有换行的字符串用''' '''引起来，\放于行末可以接着写，显示汉字：#coding:utf-8
-2. 操作：拼接用+，复制用*，len()，int()，str()，print()，type()
+2. 操作：拼接用+，复制用*，len()，int()，str()，print()，type()，.find(),.replace()
 
 # 字符串索引
 1. string = 'My name'
