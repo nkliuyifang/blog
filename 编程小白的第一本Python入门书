@@ -1,0 +1,4 @@
+## 退出cmd模式下的python:
+1. exit()
+2. ctrl + d
+3. 关掉窗口
