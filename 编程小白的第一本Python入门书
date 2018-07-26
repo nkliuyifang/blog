@@ -1,4 +1,6 @@
-## 退出cmd模式下的python:
+## 第二章 安装python环境
+
+# 退出cmd模式下的python:
 1. exit()
 2. ctrl + d
 3. 关掉窗口
