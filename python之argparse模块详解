@@ -1,0 +1,19 @@
+参考 http://sccsec.com/2016/03/19/python%E4%B9%8Bargparse%E6%A8%A1%E5%9D%97%E8%AF%A6%E8%A7%A3/
+
+import argparse # 声明
+parser = argparse.ArgumentParser() # 声明
+
+parser.add_argument("x", type=int, help="the base") # 固定参数，类型为int，help说明功能
+parser.add_argument("y", type=int, help="the exponent") # 固定参数，类型为int，help说明功能
+parser.add_argument("-v", "--verbosity", action="count", default=0) # 可选参数，-v是命令缩写，程序里用verbosity，flag参数，格式为-v -vv -vvv等
+
+args = parser.parse_args() # 声明
+
+
+answer = args.x**args.y
+if args.verbosity >= 2:
+    print "{} to the power {} equals {}".format(args.x, args.y, answer)
+elif args.verbosity >= 1:
+    print "{}^{} == {}".format(args.x, args.y, answer)
+else:
+    print answer
