@@ -1,0 +1,23 @@
+https://blog.csdn.net/l297969586/article/details/67632608
+
+Nvidia-cudnn官网 
+https://developer.nvidia.com/cuDNN 
+注册一个nvidia帐号，最后通过邮箱激活 
+点击网页上的放大镜搜索cudnn 
+选择 
+cuDNN Archive | NVIDIA Developer 
+选择你要下载的v3或者v5版本 
+1、解压出一个名为cuda的文件夹，文件夹中有include和lib64两个文件夹 
+2、安装安装需要版本的cudnn，在终端cd到刚解压的cuda文件夹
+sudo cp include/cudnn.h /usr/local/cuda/include/
+sudo cp lib64/lib* /usr/local/cuda/lib64/
+
+3、cd到/usr/local/cuda/lib64/文件夹下，建立软链接（注意版本号换成你自己的）
+sudo chmod +r libcudnn.so.5.0.5  
+sudo ln -sf libcudnn.so.5.0.5 libcudnn.so.5  
+sudo ln -sf libcudnn.so.5 libcudnn.so  
+sudo ldconfig  
+
+4、检测
+cd /usr/local/cuda/lib64/
+ll
