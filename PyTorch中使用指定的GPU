@@ -1,0 +1,6 @@
+http://www.cnblogs.com/darkknightzh/p/6836568.html
+
+CUDA_VISIBLE_DEVICES=1 python my_script.py
+
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
