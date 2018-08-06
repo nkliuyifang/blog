@@ -1,6 +1,14 @@
+## cmd中运行程序：
+CUDA_VISIBLE_DEVICES=1 python my_script.py
 http://www.cnblogs.com/darkknightzh/p/6836568.html
 
-CUDA_VISIBLE_DEVICES=1 python my_script.py
 
+## 使用pycharm:
+# 打开Run/Debug Configurations，在Environment variables 里面添加CUDA_VISIBLE_DEVICES 1。 
+https://www.cnblogs.com/darkknightzh/p/8576825.html
+
+# 下面这种方式好像没啥用
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+
+
