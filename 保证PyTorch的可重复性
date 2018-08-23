@@ -1,0 +1,8 @@
+import torch
+SEED = 0
+torch.manual_seed(SEED)
+torch.cuda.manual_seed(SEED)
+torch.backends.cudnn.deterministic = True
+
+import random
+random.seed(SEED)
