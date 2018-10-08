@@ -1,0 +1,2 @@
+去https://anaconda.org/menpo/menpo/files下载所需压缩包
+conda install *.tar.bz2
