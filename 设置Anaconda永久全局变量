@@ -1,0 +1,9 @@
+https://www.linuxidc.com/Linux/2016-08/134259.htm
+
+如果在安装Anaconda的过程中没有将安装路径添加到系统环境变量中，需要在安装后手工添加：
+
+1、在终端输入$sudo gedit /etc/profile，打开profile文件。
+
+2、在文件末尾添加一行：export PATH=/home/grant/anaconda2/bin:$PATH，其中，将“/home/grant/anaconda2/bin”替换为你实际的安装路径。保存。
+
+3、重启linux即可生效。
