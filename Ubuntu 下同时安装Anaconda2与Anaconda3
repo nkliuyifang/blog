@@ -1,11 +1,11 @@
 https://blog.csdn.net/zw__chen/article/details/78903157
 
 $ bash Anaconda2-5.0.1-Linux-x86_64.sh -b -p $HOME/anaconda3/envs/py2
-$ rm -f $HOME/anaconda3/envs/py2/bin/conda*
-$ rm -f $HOME/anaconda3/envs/py2/conda-meta/conda-*
-$ rm -f $HOME/anaconda3/envs/py2/bin/activate
-$ rm -f $HOME/anaconda3/envs/py2/bin/deactivate
-$ cd $HOME/anaconda3/envs/py2/bin
+$ rm -f anaconda3/envs/py2/bin/conda*
+$ rm -f anaconda3/envs/py2/conda-meta/conda-*
+$ rm -f anaconda3/envs/py2/bin/activate
+$ rm -f anaconda3/envs/py2/bin/deactivate
+$ cd anaconda3/envs/py2/bin
 $ ln -s ../../../bin/conda .
 $ ln -s ../../../bin/activate .
 $ ln -s ../../../bin/deactivate .
