@@ -1,0 +1,11 @@
+https://blog.csdn.net/chengyq116/article/details/79047331
+
+1. 新建文本文件 filelist.txt
+
+file 'output_train_video_0.mp4'
+file 'output_train_video_1.mp4'
+file 'output_train_video_2.mp4'
+file 'output_train_video_3.mp4'
+file 'output_train_video_4.mp4'
+
+2. ffmpeg -f concat -i filelist.txt -c copy output_set.mp4
