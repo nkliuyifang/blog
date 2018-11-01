@@ -1,0 +1,4 @@
+https://blog.csdn.net/dqchouyang/article/details/79277895
+
+ls -i
+find -inum 2234683 -delete
