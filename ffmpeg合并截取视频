@@ -1,5 +1,7 @@
 https://blog.csdn.net/chengyq116/article/details/79047331
 
+A. 合并视频
+
 1. 新建文本文件 filelist.txt
 
 file 'output_train_video_0.mp4'
@@ -9,3 +11,11 @@ file 'output_train_video_3.mp4'
 file 'output_train_video_4.mp4'
 
 2. ffmpeg -f concat -i filelist.txt -c copy output_set.mp4
+
+
+B. 截取视频
+
+ffmpeg -ss 00:00:00 -t 00:00:30 -i test.mp4 -vcodec copy -acodec copy output.mp4
+* -ss 指定从什么时间开始
+* -t 指定需要截取多长时间
+* -i 指定输入文件
