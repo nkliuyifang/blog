@@ -19,3 +19,10 @@ ffmpeg -ss 00:00:00 -t 00:00:30 -i test.mp4 -vcodec copy -acodec copy output.mp4
 * -ss 指定从什么时间开始
 * -t 指定需要截取多长时间
 * -i 指定输入文件
+
+
+C. 压缩拉伸视频
+
+ffmpeg -i test3.mp4 -filter:v "setpts=0.5*PTS" output.mp4
+
+ffmpeg -i test3.mp4 -filter:v "setpts=2*PTS" output.mp4 
