@@ -1,1 +1,5 @@
-ls -l |grep ".mp4"|wc -l
+仅当前目录
+ls -l|grep ".mp4"|wc -l
+
+当前目录及子目录
+ls -lR|grep ".mp4"|wc -l
