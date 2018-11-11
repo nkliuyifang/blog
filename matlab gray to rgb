@@ -1,0 +1,3 @@
+pdfScaled = uint8(256*pdf); % scale data
+cmp = jet(256); % 256 element colormap
+img = ind2rgb(pdfScaled,cmp);
