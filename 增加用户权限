@@ -1,0 +1,6 @@
+https://my.oschina.net/cqyj/blog/1796047
+
+# 将目录/opt 及其下面的所有文件、子目录的文件主改成 liuhai
+chown -R liuhai:liuhai /opt 
+#给目录opt设置权限
+chmod 760 /opt
