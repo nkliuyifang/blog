@@ -1,0 +1,11 @@
+https://blog.csdn.net/basededato/article/details/70156291
+
+# 关于/dev/shm的大小问题，在linux下，默认/dev/shm为实际物理内存的1/2，影响oracle内存分配问题
+# vi /etc/fstab 在shm行将default后添加size=100G，注意把前面的注释去掉~~
+tmpfs                   /dev/shm                tmpfs   defaults,size=100g        0 0
+
+# 修改后remount 
+mount –o remount  /dev/shm
+
+#查看大小
+df -h
