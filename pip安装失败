@@ -1,0 +1,4 @@
+在python中，通过以下命令查询pip支持的文件名
+import pip._internal; print(pip._internal.pep425tags.get_supported())
+将numpy-1.10.4+mkl-cp27-cp27m-win32.whl改为numpy-1.10.4+mkl-cp27-none-win32.whl
+即可通过pip install numpy-1.10.4+mkl-cp27-none-win32.whl安装
