@@ -1,0 +1,11 @@
+import imageio
+
+filename = 'test.mp4'
+vid = imageio.get_reader(filename, 'ffmpeg')
+total = vid.get_meta_data()['nframes']
+
+ind = np.linspace(0, total-1, 9, dtype = 'int')
+
+imgs = []
+for num in ind:
+  imgs.append(vid.get_data(num))
