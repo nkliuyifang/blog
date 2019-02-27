@@ -1,0 +1,1 @@
+find /from/ -name '*.jpg' | xargs mv --target-directory=/target/
