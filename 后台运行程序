@@ -2,6 +2,9 @@ nohup python run.py > log.txt &
 
 查找进程：
 ps -aux|grep run.py|grep -v grep
+注意：如果是运行run.bash，则需要杀死bash里面对应的.py文件
 
 杀死进程：(假设进程号是2342)
 kill -9 2342
+
+
