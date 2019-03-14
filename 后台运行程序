@@ -7,4 +7,12 @@ ps -aux|grep run.py|grep -v grep
 杀死进程：(假设进程号是2342)
 kill -9 2342
 
+杀死多个进程：
+ps aux | grep python | grep -v 'pattern_of_process_you_dont_want_to_kill' | awk '{print $2}' | xargs kill
+更新：评论中要求的逐步说明
+
+> ps aux | grep python – 显示匹配python模式的所有进程
+> grep -v 'pattern_of_process_you_dont_want_to_kill' – 排除你不想杀的进程
+> awk '{print $2}' – 显示输出的第二个字段,它是PID.
+> xargs kill – 对每个输入arg(PID)应用kill命令.
 
