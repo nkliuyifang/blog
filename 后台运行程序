@@ -14,4 +14,3 @@ ps aux | grep python | grep -v 'pattern_of_process_you_dont_want_to_kill' | awk 
 > grep -v 'pattern_of_process_you_dont_want_to_kill' – 排除你不想杀的进程
 > awk '{print $2}' – 显示输出的第二个字段,它是PID.
 > xargs kill – 对每个输入arg(PID)应用kill命令.
-
