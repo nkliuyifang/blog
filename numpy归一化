@@ -1,0 +1,5 @@
+a = np.arange(0,27.,3).reshape(3,3)
+print(a)
+a -= a.min(axis=1)[:,np.newaxis]
+a /= a.max(axis=1)[:,np.newaxis]
+print(a)
