@@ -9,6 +9,7 @@ kill -9 2342
 
 杀死多个进程：
 ps aux | grep python | grep -v 'pattern_of_process_you_dont_want_to_kill' | awk '{print $2}' | xargs kill
+ps aux | grep python | awk '{print $2}' | xargs kill
 
 > ps aux | grep python – 显示匹配python模式的所有进程
 > grep -v 'pattern_of_process_you_dont_want_to_kill' – 排除你不想杀的进程
