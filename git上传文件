@@ -3,6 +3,7 @@
 
 3. git clone your_name.git
 4. 拖拽文件到指定目录
+   git add ./behavior/
 5. git status查看文件状态
 6. git commit -a -m 'first commit'提交文件
 7. git push完成上传
