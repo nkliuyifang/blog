@@ -1,0 +1,7 @@
+import cv2
+
+temp = inputs[0,:,:,:].numpy()
+temp = temp * 255
+temp = np.transpose(temp, (1,2,0))
+temp = temp[:,:,[2,1,0]]
+cv2.imwrite('temp.jpg', temp)
