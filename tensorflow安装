@@ -1,0 +1,20 @@
+python3导入tensorflow时import tensorflow报错如下：
+
+ImportError: cannot import name 'abs'
+
+原因：
+protobuf和tensorflow发生了冲突
+
+解决方法：
+删除tensorflow所有模块(包括-gpu)
+
+pip uninstall tensorflow
+删除protobuf
+
+pip uninstall protobuf
+重新安装tensorflow
+
+pip install tensorflow==1.8.0
+--------------------- 
+作者：Jaichg 
+原文：https://blog.csdn.net/Jiaach/article/details/82776685
