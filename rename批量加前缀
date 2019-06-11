@@ -1,1 +1,3 @@
 rename 's/^/PRE_/' *
+
+rename .jpg _PRE.jpg *
