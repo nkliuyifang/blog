@@ -30,6 +30,7 @@ ffmpeg -i test3.mp4 -filter:v "setpts=2*PTS" output.mp4
 
 D. 视频转图片
 ffmpeg -i test3.mp4 -s 256x256 -r 30 -f image2 temp/%05d.jpg
+ffmpeg -i 1.mp4 -f image2 %05d.jpg
 
 宽度固定400，高度成比例：
 ffmpeg -i input.avi -vf scale=400:-1
