@@ -15,6 +15,9 @@ file 'output_train_video_4.mp4'
 
 B. 截取视频
 
+time = str(datetime.timedelta(seconds=63.4))
+* 时间转时间戳
+
 ffmpeg -ss 00:00:00 -t 00:00:30 -i test.mp4 -vcodec copy -acodec copy output.mp4
 * -ss 指定从什么时间开始
 * -t 指定需要截取多长时间
