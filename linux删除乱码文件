@@ -7,3 +7,6 @@ find -inum 2234683 -delete
 
 # 删除目录
 find -inum 186039394 -exec rm -rf {} \;
+
+# 文件改名
+find -inum 138289157 -exec mv {} newname \;
