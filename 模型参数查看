@@ -1,0 +1,5 @@
+params=model.state_dict() 
+for k,v in params.items():
+    print(k)    #打印网络中的变量名
+print(params['conv1.weight'])   #打印conv1的weight
+print(params['conv1.bias'])   #打印conv1的bias  
