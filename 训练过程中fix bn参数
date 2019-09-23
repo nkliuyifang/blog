@@ -1,0 +1,13 @@
+在模型定义文件重载train函数
+
+def train(self, mode=True):
+    """
+    Override the default train() to freeze the BN parameters
+    """
+    super(Network, self).train(mode)
+    for m in self.modules():
+        if isinstance(m, nn.BatchNorm2d):
+            m.eval()
+            
+使用model(input)之前加上：
+model.train(True)
