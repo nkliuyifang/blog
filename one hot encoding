@@ -1,0 +1,9 @@
+import torch
+
+def one_hot(x, class_count):
+    return torch.eye(class_count)[x,:]
+
+x = [0,2,5,4]
+class_count = 8
+out = one_hot(x,class_count)
+print(out)
