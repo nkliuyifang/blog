@@ -1,0 +1,9 @@
+https://blog.csdn.net/zhangqinghao0811/article/details/84030879
+
+就是升级后有些依赖项没有升级，卸载又没卸载干净，导致重装也不行，这口锅要甩给pip，解决方法是卸载TensorFlow后，再打开Python看看自己还能不能引用tensorflow，如果可以，直接查看tf.__path__，去该目录下把名字带tensor的文件夹全删了（最好先运行pip uninstall tensorboard，然后把tensorboard的文件夹也删了，反正装tensorflow的时候会自动重装），然后再运行
+
+pip install --ignore-installed tensorflow
+重装一遍TensorFlow就好了。
+————————————————
+版权声明：本文为CSDN博主「zhangqinghao0811」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zhangqinghao0811/article/details/84030879
