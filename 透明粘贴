@@ -1,0 +1,9 @@
+from PIL import Image
+
+source = Image.open('dapan/20190503165433920197.jpg')
+background = Image.open('seed/voa_1.png')
+
+r,g,b,a = background.split()
+
+source.paste(background,(10,10),mask = a)
+source.save('result/source.jpg')
