@@ -1,9 +1,0 @@
-用于 Python 2
-
-# coding=utf-8
-import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
-
-
-开头加上这些就好了。
