@@ -1,2 +1,14 @@
 https://blog.csdn.net/xdzhangzhenhao/article/details/80746403
 
+
+最简单的方案：不需要Root权限
+ 
+ vi  ~/.bash_profile 
+在文件中添加如下代码
+
+LD_LIBRARY_PATH=/home/feng/anaconda3/lib:$LD_LIBRARY_PATH     （将anaconda3库文件路径添加到系统的库文件路径中）
+export LD_LIBRARY_PATH
+$ source  ~/.bash_profile
+————————————————
+版权声明：本文为CSDN博主「追求卓越583」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zhuiqiuzhuoyue583/java/article/details/80150207
