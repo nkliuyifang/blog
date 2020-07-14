@@ -1,0 +1,20 @@
+https://stackoverrun.com/cn/q/4033333
+
+1. 
+extern "C" int* function(){
+int* information = new int[10];
+for(int k=0;k<10;k++){
+       information[k] = k;
+}
+return information;
+}
+
+
+2.
+import ctypes
+from numpy.ctypeslib import ndpointer
+
+lib = ctypes.CDLL('./library.so')
+lib.function.restype = ndpointer(dtype=ctypes.c_int, shape=(10,))
+
+res = lib.function()
