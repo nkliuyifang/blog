@@ -1,0 +1,4 @@
+https://www.cnblogs.com/myw31415926/archive/2013/03/13/myw31415926.html
+
+yum install gcc
+yum install gcc-c++ libstdc++-devel
